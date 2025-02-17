@@ -30,7 +30,7 @@ function App() {
   useEffect(() => {
     axios
       .get(urlPeople)
-      .then((res) => {
+      .then(res => {
         setPeople(res.data);
       })
       .catch((err) => console.error(err));
